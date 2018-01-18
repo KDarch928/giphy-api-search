@@ -1,0 +1,9 @@
+body {
+    background-image: url("../images/brickwall.jpg");
+    background-size: 100%;
+}
+
+#usr-input {
+    background: #ffff;
+    padding: 3%;
+}
