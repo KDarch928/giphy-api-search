@@ -9,36 +9,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Giphy Emotions</title>
 </head>
 <body>
-    <h1>Hello, world!</h1>
+    <h1 id="title">Express Yourself!</h1>
     <div class="container">
         <div class="row">
             <div class="col-12" id="btn-display">
             </div>
         </div>
         <div class="row">
-            <div class="col-7" id="image-display">
+            <div class="col-7 clearfix" id="image-display">
                 <div class="row">
-                    <div class="col-12">
-                        <h3 id="emotion-name">hello</h3>
+                    <div class="col-12 txt1 emoTitle" id="emotion-name">
+
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12" id="img-display">
-                        hello2
+                    <div class="col-12 txt1" id="img-display">
+
                     </div>
                 </div>
             </div>
-            <div class="col-5" id="usr-input">
+            <div class="col-5 clearfix" id="usr-input">
                 <form id="emotion-form">
                     <label for="emotion-input">Add an Emotion</label>
                     <input type="text" id="emotion-input">
                     <br>
 
                     <!-- Button triggers new emotion to be added -->
-                    <input id="add-emotion" type="submit" value="Add an Emotion">
+                    <input id="add-emotion" class="btn btn-info btn-sm" type="submit" value="Add an Emotion">
                 </form>
             </div>
     </div>
