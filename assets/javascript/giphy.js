@@ -2,6 +2,10 @@ var emotionArr = ["Awkward", "Bored", "Hungry", "Tired", "Sassy"]
 
 function displayGiphy() {
 
+    // Deletes the images and emotion title prior to adding new ones
+    $("#img-display").empty();
+    $("#emotion-name").empty();
+
     var emo = $(this).attr("data-name");
     var apiKey = "VNvRUfNQywsLoymi1hgzy6bWeyShjjf8"
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emo + "&limit=20&api_key=" + apiKey;
@@ -15,7 +19,7 @@ function displayGiphy() {
         url: queryURL,
         method: "GET"
     }).done(function(response) {
-        console.log(response);
+
         var results = response.data;
 
         //loop through all the giphy in the resutls
